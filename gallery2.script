@@ -1,0 +1,76 @@
+
+
+
+
+var n=0;
+
+
+
+
+x=document.getElementsByClassName('g');
+
+
+
+function left()
+{
+    x[n].style.display="none";
+if(n==0)
+{
+n=x.length-1;
+
+}
+
+    
+n=n-1;
+x[n].style.display="block";
+
+
+
+
+
+
+}
+
+
+
+function right()
+{
+    x[n].style.display="none";
+    if(n==x.length-2)
+    {
+n=-1;
+
+
+    }
+
+   
+n=n+1;
+x[n].style.display="block";
+
+}
+
+var onn=document.getElementsByClassName('o');
+
+function off()
+{  var t=x.length;
+   x[--t].style.display="block";
+
+    x[n].style.display="none";
+    
+    onn[0].style.display="none";
+    onn[1].style.display="none";
+
+}
+
+
+function on()
+{var t=x.length;
+   x[--t].style.display="none";
+
+    x[n].style.display="block";
+    onn[0].style.display="block";
+    onn[1].style.display="block";
+
+}
+
+
